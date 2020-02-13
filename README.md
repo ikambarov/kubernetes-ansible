@@ -1,4 +1,4 @@
-# kubernetes-ansible
+# kubernetes-ansible - Obsolete, use https://github.com/geerlingguy/ansible-role-kubernetes istead
 How to create Kubernetes cluster with Ansible playbook
 Prerequisites:
   - Centos 7
