@@ -42,14 +42,14 @@
      when: rebooting|changed
 
    - name: Add Docker repository
-     get_url:
-       url: https://download.docker.com/linux/centos/docker-ce.repo
-       dest: /etc/yum.repos.d/docker-ce.repo
+     copy:
+       src: ./dockerolderversion.repo
+       dest: /etc/yum.repos.d/docker.repo
        mode: 0644
 
    - name: Install Docker-CE
      yum:
-       name: docker-ce
+       name: docker
        state: present
        update_cache: true
 
